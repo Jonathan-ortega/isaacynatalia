@@ -1,28 +1,37 @@
-body {
+
+body, html {
+    margin: 0;
+    padding: 0;
     font-family: 'Arial', sans-serif;
+    background: url('images/fondo.png') no-repeat center center fixed;
+ 
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Cambiado para alinear al inicio */
+    align-items: center;
     height: 100vh;
-    margin: 0;
-    background: url(images/fondo.png) no-repeat center;
-    color: #333;
-
+    text-align: center;
 }
 
-.countdown {
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown { 
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    width: 100%;
-    margin-top: 20px; /* Añadir un poco de margen superior */
+    width: 80%;
+    margin-top: 10px; 
 }
 
 .countdown .timer {
-    font-size: 50px;
+    font-size: 30px;
     color: #333;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 2px;
@@ -31,8 +40,8 @@ body {
 .countdown .labels {
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 0px;
+    font-size: 12px;
     color: #666;
 }
 
@@ -41,4 +50,8 @@ body {
     text-align: center;
 }
 
-
+#cronologia {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
