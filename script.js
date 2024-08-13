@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     function actualizarCuentaAtras() {
+
         const fechaObjetivo = new Date("November 2, 2024 15:40:00").getTime();
         const ahora = new Date().getTime();
         const distancia = fechaObjetivo - ahora;
@@ -21,5 +22,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const intervalo = setInterval(actualizarCuentaAtras, 1000);
-    actualizarCuentaAtras(); // Llama a la función inicial para mostrar la cuenta atrás de inmediato
+    actualizarCuentaAtras(); 
 });
